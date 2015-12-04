@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/start_bg"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:layout_centerVertical="true"
+        android:textSize="25sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="选择题" />
+
+   
+
+    <Button
+        android:id="@+id/write"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/select"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_bg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="25sp"
+        android:text="填空题" />
+
+    <TextView
+        android:id="@+id/selectTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/write"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:text="请选择题型"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="42sp" />
+
+</RelativeLayout>

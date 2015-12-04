@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/start_bg"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/medium"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:layout_alignLeft="@+id/easy"
+        android:layout_centerVertical="true"
+        android:textSize="25sp"
+        android:layout_marginRight="15dp"
+        android:text="中 等" />
+
+    <Button
+        android:id="@+id/hard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/medium"
+        android:background="@drawable/btn_bg"
+        android:layout_below="@+id/medium"
+        android:layout_marginTop="21dp"
+        android:textSize="25sp"
+        android:layout_marginRight="15dp"
+        android:text="困 难" />
+
+    <Button
+        android:id="@+id/easy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/medium"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_bg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="25sp"
+        android:text="简 单" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/easy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="请选择难度"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="42sp" />
+
+</RelativeLayout>

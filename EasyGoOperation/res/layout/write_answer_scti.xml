@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/widget_layout_danti"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/start_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/btn_bg" >
+
+                    <TextView
+                        android:id="@+id/timutitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_toLeftOf="@+id/timu"
+                        android:text="题目："
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                         />
+
+                    <TextView
+                        android:id="@+id/timu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="22dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="30sp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <EditText
+                        android:id="@+id/useranswer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_bg"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="请输入您的答案：" />
+
+                    <Button
+                        android:id="@+id/sure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_bg"
+                        android:text="确定" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_bg"
+                    android:text="下一题"
+                     />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/circle"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/showanswertitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/showresult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/widget_layout_duoti"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FFFF"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:text="题目"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="输入结果"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="答案"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.68" >
+
+                    <ListView
+                        android:id="@+id/lvtimu"
+                        android:layout_width="134dp"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="25dp" >
+                    </ListView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/ed1"
+                            android:layout_width="108dp"
+                            android:layout_height="wrap_content"
+                            
+                            android:layout_marginTop="10dp"
+                            android:ems="10" >
+
+                            <requestFocus />
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/ed2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            
+                            android:layout_marginTop="10dp" />
+
+                        <EditText
+                            android:id="@+id/ed3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            
+                            android:layout_marginTop="10dp" />
+
+                        <EditText
+                            android:id="@+id/ed4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            
+                            android:layout_marginTop="10dp" />
+
+                        <EditText
+                            android:id="@+id/ed5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            
+                            android:layout_marginTop="10dp" />
+
+                        <EditText
+                            android:id="@+id/ed6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            
+                            android:layout_marginTop="10dp" />
+
+                        <EditText
+                            android:id="@+id/ed7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            
+                            android:layout_marginTop="10dp" />
+
+                        <EditText
+                            android:id="@+id/ed8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            
+                            android:layout_marginTop="10dp" />
+
+                        <EditText
+                            android:id="@+id/ed9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            
+                            android:layout_marginTop="10dp" />
+
+                        <EditText
+                            android:id="@+id/ed10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            
+                            android:layout_marginTop="10dp" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/lvdaan"
+                        android:layout_width="85dp"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center" >
+                    </ListView>
+                </LinearLayout>
+
+               <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/xintimu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_bg"
+                        android:layout_marginLeft="50dp"
+                        android:text="新题目" />
+
+                    <Button
+                        android:id="@+id/tijiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_bg"
+                        android:layout_marginLeft="120dp"
+                        android:text="提交" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>
