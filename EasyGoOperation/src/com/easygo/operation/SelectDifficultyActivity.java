@@ -65,13 +65,13 @@ public class SelectDifficultyActivity extends Activity {
 			intent.putExtras(bundle);
 			startActivity(intent);
 		}
-		/*if (type == 2) {
+		if (type == 2) {
 			Intent intent = new Intent(SelectDifficultyActivity.this,
-					WriteAnswerListv.class);
+					SelectAnswerActivity.class);
 			Bundle bundle = new Bundle();
 			bundle.putInt("diffi", diffi);
 			intent.putExtras(bundle);
 			startActivity(intent);
-		}*/
+		}
 	}
 }

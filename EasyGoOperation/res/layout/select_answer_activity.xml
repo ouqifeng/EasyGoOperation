@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/sbj">
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/next"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/timutitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="题目："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/timutitle"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="19dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/A"
+        android:layout_below="@+id/A"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/C"
+        android:layout_below="@+id/C"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/B"
+        android:layout_below="@+id/B"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/D"
+        android:layout_marginRight="22dp"
+        android:text="下一题" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/C"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/beijing" />
+
+    <TextView
+        android:id="@+id/Count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/B"
+        android:layout_alignRight="@+id/next"
+        android:text="TextView" />
+
+</RelativeLayout>
